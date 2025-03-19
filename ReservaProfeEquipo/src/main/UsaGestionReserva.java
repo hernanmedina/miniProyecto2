@@ -9,6 +9,7 @@ package main;
  * @author Hernan Medina
  */
 
+import control.ControlMenuReservasGUI;
 import control.ControlRegistrarReservaGUI;
 import control.ControlRegistroEquipoGUI;
 import control.ControlRegistroProfesorGUI;
@@ -17,9 +18,9 @@ import control.ControlRegistroProfesorGUI;
 public class UsaGestionReserva {
     public static void main(String[] args) {
         
-      //ControlGestionReservaGUI unParqueadero= new ControlRegistrarReservaGUI();
+      ControlRegistrarReservaGUI unParqueadero= new ControlRegistrarReservaGUI();
       //ControlRegistroProfesorGUI unParqueadero= new ControlRegistroProfesorGUI();
-      ControlRegistroEquipoGUI unParqueadero= new ControlRegistroEquipoGUI();
+      //ControlMenuReservasGUI unParqueadero= new ControlMenuReservasGUI();
        
     }
 }
