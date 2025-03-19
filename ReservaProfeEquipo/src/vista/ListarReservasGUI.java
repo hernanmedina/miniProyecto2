@@ -31,7 +31,7 @@ public class ListarReservasGUI extends javax.swing.JFrame {
         titulo_listarReserva = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Listar Reservas");
 
         jTextArea1.setEditable(false);

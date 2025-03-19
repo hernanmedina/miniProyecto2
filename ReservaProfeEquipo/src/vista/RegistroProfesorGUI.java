@@ -37,7 +37,7 @@ public class RegistroProfesorGUI extends javax.swing.JFrame {
         jtf_curso = new javax.swing.JTextField();
         jbtn_registroDocente = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Registrar Profesor");
 
         titulo_profesor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

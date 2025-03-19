@@ -35,7 +35,7 @@ public class RegistroEquipoGUI extends javax.swing.JFrame {
         jtf_anioCompra = new javax.swing.JTextField();
         jbtn_registrarEquipo = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Registrar Equipo");
 
         titulo_Equipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -44,6 +44,12 @@ public class RegistroEquipoGUI extends javax.swing.JFrame {
         jlb_numInvetario.setText("Numero de Inventario: ");
 
         jlb_marca.setText("Marca del Equipo: ");
+
+        jtf_marca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtf_marcaActionPerformed(evt);
+            }
+        });
 
         jlb_anioCompra.setText("Anio de Compra:");
 
@@ -94,6 +100,10 @@ public class RegistroEquipoGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jtf_marcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_marcaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtf_marcaActionPerformed
 
     /**
      * @param args the command line arguments
