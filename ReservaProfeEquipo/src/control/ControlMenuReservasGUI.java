@@ -4,10 +4,22 @@
  */
 package control;
 
+import vista.ListarReservasGUI;
+import vista.RegistroEquipoGUI;
+import vista.RegistroProfesorGUI;
+import vista.RegistroReservaGUI;
+import vista.MenuGUI;
+import modelo.Reserva;
+
 /**
  *
  * @author Hernan Medina
  */
 public class ControlMenuReservasGUI {
     
+    private RegistroReservaGUI vistaReserva;
+    private RegistroProfesorGUI vistaprofesor;
+    private RegistroEquipoGUI vistaEquipo;
+    private ListarReservasGUI vistaMostarReservas;
+    private 
 }
