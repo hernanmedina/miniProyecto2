@@ -25,7 +25,6 @@ public class Reserva {
         this.horaEntrega = horaEntrega;
     }
 
-    // Getters
     public Profesor getProfesor() {
         return profesor;
     }

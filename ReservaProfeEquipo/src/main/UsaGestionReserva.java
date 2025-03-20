@@ -19,7 +19,7 @@ public class UsaGestionReserva {
         List<Equipo> equipos = new ArrayList<>();
         List<Reserva> reservas = new ArrayList<>();
 
-        // Inicializar los controladores con las listas
+        
         //new ControlRegistrarReservaGUI(reservas, docentes, equipos);
         //new ControlRegistroProfesorGUI(docentes);
         //new ControlRegistrarEquipoGUI(equipos);

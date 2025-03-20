@@ -52,7 +52,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="37" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -136,7 +136,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jlb_fachaRecogida">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Fecha de Recogida del equipo: "/>
+        <Property name="text" type="java.lang.String" value="Fecha de Recogida del equipo: DD/MM/AAAA "/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -149,7 +149,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jlb_fechaEntrega">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Fecha de Entrega del Equipo:"/>
+        <Property name="text" type="java.lang.String" value="Fecha de Entrega del Equipo DD/MM/AAAA:"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

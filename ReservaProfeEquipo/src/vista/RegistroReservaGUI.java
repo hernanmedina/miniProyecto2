@@ -59,9 +59,9 @@ public class RegistroReservaGUI extends javax.swing.JFrame {
             }
         });
 
-        jlb_fachaRecogida.setText("Fecha de Recogida del equipo: ");
+        jlb_fachaRecogida.setText("Fecha de Recogida del equipo: DD/MM/AAAA ");
 
-        jlb_fechaEntrega.setText("Fecha de Entrega del Equipo:");
+        jlb_fechaEntrega.setText("Fecha de Entrega del Equipo DD/MM/AAAA:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -88,7 +88,7 @@ public class RegistroReservaGUI extends javax.swing.JFrame {
                                     .addComponent(jtf_numInventarioReserva, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
                                     .addComponent(jtf_fechaRecogida)
                                     .addComponent(jtf_fechaEntrega))))))
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

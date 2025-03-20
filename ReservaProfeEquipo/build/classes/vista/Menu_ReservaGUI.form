@@ -23,21 +23,14 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jBtn_buscar_reserva" alignment="1" min="-2" pref="166" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jBtn_Registrar_Profesor" min="-2" pref="152" max="-2" attributes="0"/>
-                      <Component id="jBtn_Registrar_Equipo" min="-2" pref="152" max="-2" attributes="0"/>
-                      <Component id="jBtn_buscar_Equipo" max="32767" attributes="0"/>
-                      <Component id="jBtn_buscar_profesor" alignment="0" pref="166" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="jBtn_Registrar_Profesor" min="-2" pref="152" max="-2" attributes="0"/>
+                  <Component id="jBtn_Registrar_Equipo" min="-2" pref="152" max="-2" attributes="0"/>
+                  <Component id="jBtn_buscar_Equipo" max="32767" attributes="0"/>
+                  <Component id="jBtn_buscar_profesor" alignment="0" pref="166" max="32767" attributes="0"/>
+                  <Component id="jBtn_buscar_reserva" alignment="1" max="32767" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
@@ -58,14 +51,19 @@
                   </Group>
               </Group>
           </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="458" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTf_Reserva" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -86,7 +84,7 @@
                   <Component id="jBtn_Registra_reserva" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtn_Registrar_Profesor" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jBtn_Listar_Reserva" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtn_Registrar_Equipo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -137,12 +135,18 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI Historic" size="48" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Menu de reservas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
     </Component>
     <Component class="javax.swing.JTextField" name="jTf_Reserva">
+      <Properties>
+        <Property name="actionCommand" type="java.lang.String" value="null"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTf_ReservaActionPerformed"/>
       </Events>
@@ -168,7 +172,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtn_buscar_reserva">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Buscar Reserva: "/>
+        <Property name="text" type="java.lang.String" value="Buscar Reserva::"/>
+        <Property name="actionCommand" type="java.lang.String" value="Buscar Reserva (ID del computador): "/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtn_buscar_reservaActionPerformed"/>

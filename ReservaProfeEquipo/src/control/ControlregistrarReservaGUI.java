@@ -71,16 +71,23 @@ public class ControlRegistrarReservaGUI implements ActionListener {
                 for (Reserva r : reservas) {
                     if (r.getEquipo().getNumeroInventario() == numInventario &&
                         fechaRecogida.before(r.getHoraEntrega()) && fechaEntrega.after(r.getHoraRecogida())) {
-                        JOptionPane.showMessageDialog(vistaReserva, "Error: El equipo ya está reservado en ese horario.");
+                        JOptionPane.showMessageDialog(vistaReserva, "Error: El equipo ya esta reservado en ese horario.");
                         return;
                     }
                 }
                 
                 Reserva nuevaReserva = new Reserva(profesor, equipo, new Date(), fechaRecogida, fechaEntrega);
                 reservas.add(nuevaReserva);
-                JOptionPane.showMessageDialog(vistaReserva, "¡Reserva registrada con éxito!");
+                JOptionPane.showMessageDialog(vistaReserva, "¡Reserva registrada con exito!");
+                
+                vistaReserva.jtf_cedulaReserva.setText("");
+                vistaReserva.jtf_fechaEntrega.setText("");
+                vistaReserva.jtf_fechaRecogida.setText("");
+                vistaReserva.jtf_numInventarioReserva.setText("");
+                
+                
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(vistaReserva, "Error: Verifique los datos numéricos ingresados.");
+                JOptionPane.showMessageDialog(vistaReserva, "Error: Verifique los datos numericos ingresados.");
             } catch (ParseException ex) {
                 JOptionPane.showMessageDialog(vistaReserva, "Error: Formato de fecha incorrecto. Use dd/MM/yyyy");
             }

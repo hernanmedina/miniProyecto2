@@ -37,16 +37,21 @@ public class ControlRegistroProfesorGUI implements ActionListener {
 
                 Profesor nuevoProfesor = new Profesor(cedula, nombre, apellido, curso);
                 docentes.add(nuevoProfesor);
-                JOptionPane.showMessageDialog(vistaRegistroProfesor, "¡Profesor registrado con éxito!");
+                JOptionPane.showMessageDialog(vistaRegistroProfesor, "¡Profesor registrado con exito!");
                 
                  // Mostrar la lista de profesores en consola
                 System.out.println("Lista de Equipos Registrados:");
                 for (Profesor p : docentes) {
                     System.out.println("Cedula: " + p.getCedula() + ", Nombre: " + p.getNombre() + ", Apellido: " + p.getApellido() + ", Curso: " + p.getCurso());
                 }
+                vistaRegistroProfesor.jtf_cedula.setText("");
+                vistaRegistroProfesor.jtf_nombre.setText("");
+                vistaRegistroProfesor.jtf_apellido.setText("");
+                vistaRegistroProfesor.jtf_curso.setText("");
                 
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(vistaRegistroProfesor, "Error: La cédula debe ser un número.");
+                JOptionPane.showMessageDialog(vistaRegistroProfesor, "Error: La cedula debe ser un numero.");
+   
             }
         }
     }

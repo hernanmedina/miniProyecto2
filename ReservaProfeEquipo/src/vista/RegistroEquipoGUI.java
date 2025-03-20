@@ -51,7 +51,7 @@ public class RegistroEquipoGUI extends javax.swing.JFrame {
             }
         });
 
-        jlb_anioCompra.setText("Anio de Compra:");
+        jlb_anioCompra.setText("Año de Compra:");
 
         jbtn_registrarEquipo.setText("Registrar Equipo");
 

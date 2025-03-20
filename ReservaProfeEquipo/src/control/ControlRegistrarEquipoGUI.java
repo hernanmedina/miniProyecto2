@@ -29,14 +29,14 @@ public class ControlRegistrarEquipoGUI implements ActionListener {
                 
                 for (Equipo equipo : equipos) {
                     if (equipo.getNumeroInventario() == numInventario) {
-                        JOptionPane.showMessageDialog(vistaRegistroEquipo, "Error: El equipo ya está registrado.");
+                        JOptionPane.showMessageDialog(vistaRegistroEquipo, "Error: El equipo ya esta registrado.");
                         return;
                     }
                 }
                 
                 Equipo nuevoEquipo = new Equipo(numInventario, marca, anoCompra);
                 equipos.add(nuevoEquipo);
-                JOptionPane.showMessageDialog(vistaRegistroEquipo, "¡Equipo registrado con éxito!");
+                JOptionPane.showMessageDialog(vistaRegistroEquipo, "¡Equipo registrado con exito!");
                 
                 // Mostrar la lista de equipos en consola
                 System.out.println("Lista de Equipos Registrados:");
@@ -44,8 +44,13 @@ public class ControlRegistrarEquipoGUI implements ActionListener {
                     System.out.println("Inventario: " + eq.getNumeroInventario() + ", Marca: " + eq.getMarca() + ", Año: " + eq.getAnoCompra());
                 }
                 
+                vistaRegistroEquipo.jtf_anioCompra.setText("");
+                vistaRegistroEquipo.jtf_marca.setText("");
+                vistaRegistroEquipo.jtf_numInventario.setText("");
+                
+                
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(vistaRegistroEquipo, "Error: Verifique los datos numéricos ingresados.");
+                JOptionPane.showMessageDialog(vistaRegistroEquipo, "Error: Verifique los datos numericos ingresados.");
             }
         }
     }

@@ -55,13 +55,13 @@ public class ControlMenuReservasGUI implements ActionListener {
             int cedula = Integer.parseInt(vistaMenu.jTf_Profersor.getText());
             for (Profesor profesor : docentes) {
                 if (profesor.getCedula() == cedula) {
-                    JOptionPane.showMessageDialog(vistaMenu, "Profesor encontrado: " + profesor.getNombre() + " " + profesor.getApellido());
+                    JOptionPane.showMessageDialog(vistaMenu, "Profesor encontrado: " + profesor.getNombre() + " " + profesor.getApellido() + "curso dictado: " + profesor.getCurso());
                     return;
                 }
             }
             JOptionPane.showMessageDialog(vistaMenu, "Profesor no encontrado.");
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(vistaMenu, "Error: Ingrese una cédula válida.");
+            JOptionPane.showMessageDialog(vistaMenu, "Error: Ingrese una cedula valida.");
         }
     }
 
@@ -70,13 +70,13 @@ public class ControlMenuReservasGUI implements ActionListener {
             int numInventario = Integer.parseInt(vistaMenu.jTf_Equipo.getText());
             for (Equipo equipo : equipos) {
                 if (equipo.getNumeroInventario() == numInventario) {
-                    JOptionPane.showMessageDialog(vistaMenu, "Equipo encontrado: " + equipo.getMarca());
+                    JOptionPane.showMessageDialog(vistaMenu, "Equipo encontrado: " + equipo.getMarca() + " año de compra: " + equipo.getAnoCompra());
                     return;
                 }
             }
             JOptionPane.showMessageDialog(vistaMenu, "Equipo no encontrado.");
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(vistaMenu, "Error: Ingrese un número de inventario válido.");
+            JOptionPane.showMessageDialog(vistaMenu, "Error: Ingrese un numero de inventario valido.");
         }
     }
 
@@ -85,13 +85,13 @@ public class ControlMenuReservasGUI implements ActionListener {
             int numInventario = Integer.parseInt(vistaMenu.jTf_Reserva.getText());
             for (Reserva reserva : reservas) {
                 if (reserva.getEquipo().getNumeroInventario() == numInventario) {
-                    JOptionPane.showMessageDialog(vistaMenu, "Reserva encontrada para el equipo " + numInventario);
+                    JOptionPane.showMessageDialog(vistaMenu, "Reserva encontrada para el equipo " + numInventario + " Equipo asignado al profesor: " + reserva.getProfesor().getNombre());
                     return;
                 }
             }
             JOptionPane.showMessageDialog(vistaMenu, "No se encontraron reservas para este equipo.");
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(vistaMenu, "Error: Ingrese un número de inventario válido.");
+            JOptionPane.showMessageDialog(vistaMenu, "Error: Ingrese un numero de inventario valido.");
         }
     }
 }
