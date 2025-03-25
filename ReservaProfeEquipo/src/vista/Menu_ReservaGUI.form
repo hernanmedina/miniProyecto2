@@ -36,60 +36,85 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTf_Reserva" min="-2" pref="179" max="-2" attributes="0"/>
-                          <Component id="jBtn_Registra_reserva" min="-2" pref="144" max="-2" attributes="0"/>
+                          <Component id="jTf_Reserva" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
                           <Component id="jTf_Profersor" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
                           <Component id="jTf_Equipo" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
-                          <Component id="jBtn_Listar_Reserva" min="-2" pref="144" max="-2" attributes="0"/>
+                          <Component id="jBtn_Registra_reserva" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                          <Component id="jBtn_Listar_Reserva" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jbtn_eliminar_reserva" max="32767" attributes="0"/>
+                          <Component id="jbtn_modificar_reserva" max="32767" attributes="0"/>
+                          <Component id="jbtn_modificar_Profesor" pref="155" max="32767" attributes="0"/>
+                          <Component id="jbtn_modificar_equipo" max="32767" attributes="0"/>
+                          <Component id="jbtn_eliminar_profesor" max="32767" attributes="0"/>
+                          <Component id="jbtn_eliminar_equipo" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="139" max="32767" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="125" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="273" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="jLabel1" min="-2" pref="458" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTf_Reserva" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtn_buscar_reserva" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_modificar_reserva" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTf_Profersor" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtn_buscar_profesor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_modificar_Profesor" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTf_Equipo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtn_buscar_Equipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_modificar_equipo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtn_Registra_reserva" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtn_Registrar_Profesor" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jbtn_eliminar_reserva" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jBtn_Registra_reserva" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtn_Registrar_Profesor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jBtn_Listar_Reserva" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtn_Registrar_Equipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_eliminar_profesor" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_eliminar_equipo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtn_Listar_Reserva" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtn_Registrar_Equipo" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -172,7 +197,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtn_buscar_reserva">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Buscar Reserva::"/>
+        <Property name="text" type="java.lang.String" value="Buscar Reserva"/>
         <Property name="actionCommand" type="java.lang.String" value="Buscar Reserva (ID del computador): "/>
       </Properties>
       <Events>
@@ -193,6 +218,60 @@
     <Component class="javax.swing.JButton" name="jBtn_buscar_Equipo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Buscar Equipo"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_modificar_reserva">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modificar reserva"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtn_modificar_reservaActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_modificar_Profesor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modificar Profesor"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtn_modificar_ProfesorActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_modificar_equipo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modificar Equipo"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_eliminar_reserva">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Eliminar Reserva"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_eliminar_profesor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Eliminar Profesor"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_eliminar_equipo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Eliminar Equipo"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

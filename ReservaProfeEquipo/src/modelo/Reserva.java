@@ -4,6 +4,7 @@
  */
 package modelo;
 import java.util.Date;
+import modelo.Reserva;
 
 /**
  *
@@ -43,6 +44,26 @@ public class Reserva {
 
     public Date getHoraEntrega() {
         return horaEntrega;
+    }
+    
+    public void setProfesor(Profesor profesor) {
+    this.profesor = profesor;
+}
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+    
+    public void setFechaReserva(Date fechaReserva) {
+        this.fechaReserva = fechaReserva;
+    }
+
+    public void setHoraEntrega(Date horaEntrega) {
+        this.horaEntrega = horaEntrega;
+    }
+    
+    public void setHoraRecogida(Date horaRecogida){
+        this.horaRecogida = horaRecogida;
     }
 }
 

@@ -91,7 +91,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="titulo_Reserva">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pantalla de agendar  reserva"/>
+        <Property name="text" type="java.lang.String" value="Pantalla para reservas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jlb_cedulaReserva">

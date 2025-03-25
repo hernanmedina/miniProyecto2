@@ -40,7 +40,7 @@ public class RegistroReservaGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Registro Reservas");
 
-        titulo_Reserva.setText("Pantalla de agendar  reserva");
+        titulo_Reserva.setText("Pantalla para reservas");
 
         jlb_cedulaReserva.setText("Ingrese cedula del docente:");
 

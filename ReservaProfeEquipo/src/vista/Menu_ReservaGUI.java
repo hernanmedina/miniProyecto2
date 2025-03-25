@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
+import vista.Menu_ReservaGUI;
+
 
 /**
  *
@@ -38,6 +40,12 @@ public class Menu_ReservaGUI extends javax.swing.JFrame {
         jBtn_buscar_reserva = new javax.swing.JButton();
         jBtn_buscar_profesor = new javax.swing.JButton();
         jBtn_buscar_Equipo = new javax.swing.JButton();
+        jbtn_modificar_reserva = new javax.swing.JButton();
+        jbtn_modificar_Profesor = new javax.swing.JButton();
+        jbtn_modificar_equipo = new javax.swing.JButton();
+        jbtn_eliminar_reserva = new javax.swing.JButton();
+        jbtn_eliminar_profesor = new javax.swing.JButton();
+        jbtn_eliminar_equipo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,7 +70,7 @@ public class Menu_ReservaGUI extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 2, 48)); // NOI18N
         jLabel1.setText("Menu de reservas");
 
-        jTf_Reserva.setActionCommand(null);
+        jTf_Reserva.setActionCommand("null");
         jTf_Reserva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTf_ReservaActionPerformed(evt);
@@ -81,7 +89,7 @@ public class Menu_ReservaGUI extends javax.swing.JFrame {
             }
         });
 
-        jBtn_buscar_reserva.setText("Buscar Reserva::");
+        jBtn_buscar_reserva.setText("Buscar Reserva");
         jBtn_buscar_reserva.setActionCommand("Buscar Reserva (ID del computador): ");
         jBtn_buscar_reserva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,6 +100,28 @@ public class Menu_ReservaGUI extends javax.swing.JFrame {
         jBtn_buscar_profesor.setText("Buscar Profesor");
 
         jBtn_buscar_Equipo.setText("Buscar Equipo");
+
+        jbtn_modificar_reserva.setText("Modificar reserva");
+        jbtn_modificar_reserva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn_modificar_reservaActionPerformed(evt);
+            }
+        });
+
+        jbtn_modificar_Profesor.setText("Modificar Profesor");
+        jbtn_modificar_Profesor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn_modificar_ProfesorActionPerformed(evt);
+            }
+        });
+
+        jbtn_modificar_equipo.setText("Modificar Equipo");
+
+        jbtn_eliminar_reserva.setText("Eliminar Reserva");
+
+        jbtn_eliminar_profesor.setText("Eliminar Profesor");
+
+        jbtn_eliminar_equipo.setText("Eliminar Equipo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,47 +140,68 @@ public class Menu_ReservaGUI extends javax.swing.JFrame {
                         .addGap(65, 65, 65)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTf_Reserva, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBtn_Registra_reserva, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTf_Profersor, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTf_Equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBtn_Registra_reserva, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBtn_Listar_Reserva, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(76, 76, 76)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jbtn_eliminar_reserva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jbtn_modificar_reserva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jbtn_modificar_Profesor, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                            .addComponent(jbtn_modificar_equipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jbtn_eliminar_profesor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jbtn_eliminar_equipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(273, 273, 273))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(68, 68, 68)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(105, 105, 105))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
-                .addGap(32, 32, 32)
+                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jTf_Reserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtn_buscar_reserva))
+                    .addComponent(jBtn_buscar_reserva)
+                    .addComponent(jbtn_modificar_reserva))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTf_Profersor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtn_buscar_profesor))
+                    .addComponent(jBtn_buscar_profesor)
+                    .addComponent(jbtn_modificar_Profesor))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTf_Equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtn_buscar_Equipo))
-                .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtn_Registra_reserva)
-                    .addComponent(jBtn_Registrar_Profesor))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtn_Listar_Reserva)
-                    .addComponent(jBtn_Registrar_Equipo))
-                .addGap(83, 83, 83))
+                    .addComponent(jBtn_buscar_Equipo)
+                    .addComponent(jbtn_modificar_equipo))
+                .addGap(18, 18, 18)
+                .addComponent(jbtn_eliminar_reserva)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jBtn_Registra_reserva)
+                            .addComponent(jBtn_Registrar_Profesor))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jBtn_Listar_Reserva)
+                            .addComponent(jBtn_Registrar_Equipo))
+                        .addGap(83, 83, 83))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_eliminar_profesor)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_eliminar_equipo)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -179,6 +230,14 @@ public class Menu_ReservaGUI extends javax.swing.JFrame {
     private void jBtn_buscar_reservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn_buscar_reservaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtn_buscar_reservaActionPerformed
+
+    private void jbtn_modificar_ProfesorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn_modificar_ProfesorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn_modificar_ProfesorActionPerformed
+
+    private void jbtn_modificar_reservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn_modificar_reservaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtn_modificar_reservaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,5 +287,11 @@ public class Menu_ReservaGUI extends javax.swing.JFrame {
     public javax.swing.JTextField jTf_Equipo;
     public javax.swing.JTextField jTf_Profersor;
     public javax.swing.JTextField jTf_Reserva;
+    public javax.swing.JButton jbtn_eliminar_equipo;
+    public javax.swing.JButton jbtn_eliminar_profesor;
+    public javax.swing.JButton jbtn_eliminar_reserva;
+    public javax.swing.JButton jbtn_modificar_Profesor;
+    public javax.swing.JButton jbtn_modificar_equipo;
+    public javax.swing.JButton jbtn_modificar_reserva;
     // End of variables declaration//GEN-END:variables
 }

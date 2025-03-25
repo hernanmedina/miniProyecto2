@@ -41,4 +41,21 @@ public class Profesor {
     public String getCurso() {
         return curso;
     }
+    
+    //Setters
+       public void setCedula(int cedula) {
+        this.cedula = cedula;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
 }

@@ -85,7 +85,7 @@
     <Component class="javax.swing.JLabel" name="titulo_profesor">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Pantalla de registro de profesor"/>
+        <Property name="text" type="java.lang.String" value="Pantalla para profesores"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>

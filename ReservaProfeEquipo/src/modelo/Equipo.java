@@ -35,5 +35,18 @@ public class Equipo {
     public int getAnoCompra() {
         return anoCompra;
     }
+    
+    //Setters
+    public void setNumeroInventario(int numeroInventario) {
+        this.numeroInventario = numeroInventario;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setAnoCompra(int anoCompra) {
+        this.anoCompra = anoCompra;
+    }
 }
 

@@ -41,7 +41,7 @@ public class RegistroProfesorGUI extends javax.swing.JFrame {
         setTitle("Registrar Profesor");
 
         titulo_profesor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        titulo_profesor.setText("Pantalla de registro de profesor");
+        titulo_profesor.setText("Pantalla para profesores");
 
         jlb_nombre.setText("Nombre: ");
 

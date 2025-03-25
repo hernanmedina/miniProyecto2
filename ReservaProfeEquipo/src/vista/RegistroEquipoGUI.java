@@ -39,7 +39,7 @@ public class RegistroEquipoGUI extends javax.swing.JFrame {
         setTitle("Registrar Equipo");
 
         titulo_Equipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        titulo_Equipo.setText("Pantalla para Registrar Equipos de Computo");
+        titulo_Equipo.setText("Pantalla para Equipos de Computo");
 
         jlb_numInvetario.setText("Numero de Inventario: ");
 
